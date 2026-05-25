@@ -146,12 +146,16 @@ body{
 
 .small-gallery{
     display:flex;
+    flex-direction:column;
     gap:15px;
     margin-top:15px;
 }
 
 .small-gallery img{
     width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:15px;
     border-radius:14px;
 }
 
