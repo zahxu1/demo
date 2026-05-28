@@ -298,6 +298,8 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
   <div class="concept-grid flip">
     <div class="c-prose fu">
       <p><strong>Edge Impulse</strong> is the platform used to build and train the AI model. It takes raw audio recordings and turns them into a finished C++ library small enough to run on a microcontroller — handling signal processing, neural network training, and hardware export automatically.</p>
+      <p>Edge Impulse stands as a versatile platform meticulously crafted to address the requirements of developers aiming to deploy embedded machine-learning solutions at scale. This seamlessly integrated platform amalgamates key components such as software-as-a-service, developer tools, embedded software, and comprehensive documentation. Its design is dedicated to empowering embedded development teams, providing the necessary tools and resources to successfully leverage machine learning within an embedded context.<p>
+      <p>One approach to designing an impulse involves utilizing a data set, wherein the raw data is segmented into smaller windows and processed using signal processing blocks to extract key features. The resulting data is then classified using a learning block. Signal processing blocks are useful for making raw data easier to handle, and learning blocks can learn from past experiences. For the current project, as the device is intended to recognize human speech, it is recommended to utilize the MFCC block. This block leverages Mel Frequency Cepstral Coefficients to simplify raw audio data, which typically contains a significant amount of redundant information. The "MFCC" block is particularly effective for processing human speech.<p>
       <p>For this project, <strong>5,710 audio clips</strong> were recorded directly through the Arduino's own microphone and fed into Edge Impulse. The platform extracted MFCC features, trained the classifier, and packaged the final model as a plug-in Arduino library — ready to flash with one click.</p>
     </div>
     <div class="c-cards fu" style="transition-delay:.1s">
@@ -328,6 +330,8 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
         <h3>Distress Recognition System</h3>
         <p>An Arduino Nano BLE 33 runs the keyword spotting model continuously. When a distress phrase clears its confidence threshold, one of three LEDs activates — each one mapped to a specific language.</p>
         <ul class="feat-list">
+          <li><span class="fi">◈</span>The Arduino Nano 33 BLE Sense board is a tool, for researchers and developers working in the field of wireless sensor networks (WSN) and Internet of Things (IoT)</li>
+          <li><span class="fi">◈</span>Its small size, sensors, and support for Bluetooth Low Energy (BLE) and I2C communication make it a versatile and powerful platform for creating applications</li>
           <li><span class="fi">◈</span>Trained on real bathroom sounds — running taps, toilet flushing, splashing water — so the model actively ignores the environment it lives in</li>
           <li><span class="fi">◈</span>Every audio sample was personally recorded and labelled — no pre-built dataset was used</li>
           <li><span class="fi">◈</span>MFCC processing via Edge Impulse, deployed as a C++ library flashed directly to the Arduino</li>
@@ -355,7 +359,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
       <span class="step-num">Step 01</span>
       <span class="step-icon">🎙</span>
       <p class="step-title">Building the dataset</p>
-      <p class="step-body">5,710 audio clips were recorded across 30 contributors — deliberately varied by age, gender, distance from the mic, and speaking style. Bathroom sounds (tap water, flushing, water droplets) were recorded separately as negative examples. An early attempt using phone recordings produced a model that failed on the Arduino because the microphones didn't match — all final data was captured using the device's own mic.</p>
+      <p class="step-body">5,710 audio clips were recorded across 30 contributors — deliberately varied by age, gender, distance from the mic, and speaking style. Bathroom sounds (tap water, flushing, water droplets) were recorded separately as negative examples. When it comes to creating a robust machine learning model, collecting more data is crucial. In fact, the more data you have, the better the model will be at learning patterns in data sets. It's important to train the model with various voices saying the phrases to ensure accuracy.</p>
     </div>
     <div class="step fu" style="transition-delay:.10s">
       <span class="step-num">Step 02</span>
