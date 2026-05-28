@@ -332,6 +332,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
         <ul class="feat-list">
           <li><span class="fi">◈</span>The Arduino Nano 33 BLE Sense board is a tool, for researchers and developers working in the field of wireless sensor networks (WSN) and Internet of Things (IoT)</li>
           <li><span class="fi">◈</span>Its small size, sensors, and support for Bluetooth Low Energy (BLE) and I2C communication make it a versatile and powerful platform for creating applications</li>
+          <li><span class="fi">◈</span>Built using, TinyML, Edge Impulse, Arduino Nano 33 BLE Sense, Embedded C++
           <li><span class="fi">◈</span>Trained on real bathroom sounds — running taps, toilet flushing, splashing water — so the model actively ignores the environment it lives in</li>
           <li><span class="fi">◈</span>Every audio sample was personally recorded and labelled — no pre-built dataset was used</li>
           <li><span class="fi">◈</span>MFCC processing via Edge Impulse, deployed as a C++ library flashed directly to the Arduino</li>
@@ -393,9 +394,9 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
       <p>Collecting 30 different voices was time-consuming but non-negotiable. A model trained on one or two voices will overfit to those specific vocal characteristics and fail on anyone new. The testing results — 5 out of 7 first-attempt detections across unfamiliar voices — confirmed that voice diversity in the dataset directly produces robustness in the field.</p>
     </div>
     <div class="nexts fu" style="transition-delay:.1s">
-      <div class="next"><span class="next-n">→ 01</span><p class="next-b"><strong>Caregiver notification via GSM</strong> — integrating a SIM800L module would allow the device to automatically call or message a designated contact when a phrase is detected. The LED would become a secondary indicator rather than the primary alert.</p></div>
-      <div class="next"><span class="next-n">→ 02</span><p class="next-b"><strong>Tamil language support</strong> — adding Singapore's fourth official language would complete coverage across all major elderly communities in the country without requiring separate devices.</p></div>
-      <div class="next"><span class="next-n">→ 03</span><p class="next-b"><strong>Elderly-focused voice collection</strong> — the current dataset skews toward younger contributors. Dedicated recordings from elderly speakers — accounting for softer volume, slower pace, and lower pitch — would improve accuracy precisely for the intended users.</p></div>
+      <div class="next"><span class="next-n">→ 01</span><p class="next-b"><strong>Caregiver notification via GSM</strong> — integrating a SIM800L module or wifi alert would allow the device to automatically call or message a designated contact when a phrase is detected. </p></div>
+      <div class="next"><span class="next-n">→ 02</span><p class="next-b"><strong>Tamil language support</strong> — Adding Singapore's fourth official language would complete coverage across all major elderly communities in the country without requiring separate devices.</p></div>
+      <div class="next"><span class="next-n">→ 03</span><p class="next-b"><strong>Fall detection</strong> — Additional sensor integration such as fall detection or motion sensing for multi-modal emergency monitoring.</p></div>
       <div class="next"><span class="next-n">→ 04</span><p class="next-b"><strong>Custom PCB and wall-mount housing</strong> — replacing the breadboard with a purpose-designed PCB would shrink the enclosure to a size practical for permanent bathroom wall mounting — the final step toward a deployable product.</p></div>
     </div>
   </div>
