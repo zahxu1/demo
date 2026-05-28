@@ -190,13 +190,13 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
 <!-- HERO -->
 <section id="hero">
   <div class="grid-bg"></div><div class="hero-glow"></div>
-  <p class="eyebrow fu">Final Year Project · Nanyang Polytechnic · Biomedical Engineering</p>
+  <p class="eyebrow fu">TinyML Project . Embedded System</p>
   <h1 class="hero-title fu" style="transition-delay:.08s">Distress<br/><span>Recognition</span><br/>Device.</h1>
   <p class="hero-desc fu" style="transition-delay:.16s">
-    A voice-activated emergency alert device that runs AI entirely on a tiny microcontroller — no internet, no app, no setup. Say the phrase, the LED lights up. Built for elderly residents living alone.
+    A TinyML-based embedded system designed to detect emergency distress phrases in real time using on-device machine learning. This project explores how low-power edge AI can improve elderly safety and smart home monitoring through offline speech recognition.
   </p>
   <div class="cta-row fu" style="transition-delay:.22s">
-    <a href="#prototype" class="btn-p">↓ Watch the demo</a>
+    <a href="#prototype" class="btn-p">↓ See the prototype</a>
     <a href="#tinyml" class="btn-g">What is TinyML? →</a>
   </div>
   <div class="hero-stats fu" style="transition-delay:.30s">
@@ -215,7 +215,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
     <div class="prose fu">
       <p>Singapore's National Registry of Diseases records <strong>277.7 falls per 100,000</strong> adults over 60 every year. Most happen at home — often when no one else is present. A fall that goes undetected for hours can be fatal.</p>
       <p>Current solutions each have a critical gap. <strong>Panic buttons</strong> require the user to physically reach and press them during an emergency. <strong>Wearables</strong> only work if worn. <strong>Smartphones</strong> depend on dexterity, awareness, and battery charge. None of these are guaranteed when someone is in genuine distress.</p>
-      <p>This project explores a simpler approach: a device that sits passively near a bathroom — one of the highest-risk rooms for elderly falls — and listens. The moment it recognises a distress phrase, it triggers an alert automatically. The user just needs to speak.</p>
+      <p>This project investigates how TinyML and edge AI can be used to create a lightweight, low-power embedded system capable of continuously detecting emergency distress phrases fully offline in noisy bathroom environments..</p>
       <p>The phrase <strong>"Help me now"</strong> was chosen because its three syllables make it far easier for a neural network to distinguish from normal conversation than single-syllable words, which are prone to false positives. It was also chosen because it translates directly into the three main languages spoken by Singapore's elderly population.</p>
     </div>
     <div class="kpi-grid fu" style="transition-delay:.1s">
@@ -264,7 +264,6 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
         </div>
         <span class="badge g">GREEN</span>
       </div>
-      <p class="hint">↑ click a row to simulate a detection event</p>
       <div class="info-card">
         The model was tested with <strong>7 different voices</strong>. It identified the correct phrase on the first attempt in <strong>5 out of 7</strong> cases — including a volunteer who had never contributed to data collection, confirming the model generalises beyond voices it was trained on.
       </div>
@@ -278,7 +277,7 @@ footer{padding:40px 48px;display:flex;align-items:center;justify-content:space-b
   <h2 class="sec-h fu">What is TinyML?</h2>
   <div class="concept-grid">
     <div class="c-prose fu">
-      <p>Most AI — voice assistants, speech recognition apps — works by sending audio to a remote server and waiting for a response. <strong>TinyML does the opposite:</strong> the entire AI model runs on the chip itself, in real time, with no internet needed. Every decision happens locally, in under a second.</p>
+      <p>TinyML represents a fascinating field of study that marries machine learning with embedded systems. Its primary aim is to investigate the feasibility of running models on small, energy-efficient device such as microcontrollers. This technology open doors to achieving low latency, energy-efficient, and bandwidth-frugal model inferences directly at the edge, where data is generated.</p>
       <p>For an emergency device, that matters. A person in distress cannot wait for a server round-trip. This project compresses a working speech classifier into just <strong>13KB of memory</strong> — roughly the size of a small image file — while keeping it fast, private, and battery-powered.</p>
     </div>
     <div class="c-cards fu" style="transition-delay:.1s">
